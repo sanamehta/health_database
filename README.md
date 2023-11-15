@@ -98,7 +98,7 @@ You can also check the `schema.png` for better visualization on how everything c
 ### Indexing 
 - **Primary Key Indexing:** Primary keys are indexed. This means each id field in your tables (User, Workout, Nutrition, Sleep) is  indexed. This indexing is crucial for efficient lookup, update, and delete operations based on the primary key.
 
--**Foreign Key Indexing:** We have index foreign key columns in relational databases for performance reasons. In our model, the user_id fields in the Workout, Nutrition, and Sleep tables are foreign keys referencing the User table. Indexing these  significantly improve the performance of join operations and queries that involve filtering or sorting based on user_id.
+- **Foreign Key Indexing:** We have index foreign key columns in relational databases for performance reasons. In our model, the user_id fields in the Workout, Nutrition, and Sleep tables are foreign keys referencing the User table. Indexing these  significantly improve the performance of join operations and queries that involve filtering or sorting based on user_id.
 
 - **Additional Index:** When we have an index on a column, the database can use the index to quickly locate the data without having to scan the entire table. Like in our model, The date field in Workout, Nutrition, and Sleep tables are indexed to speed up queries filtering by date, such as in get_total_calories_burned and get_total_nutrition.
 
