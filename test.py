@@ -47,6 +47,9 @@ class TestFitness(unittest.TestCase):
         for _ in range(5):
             fake_user = create_fake_user(f)
             create_fake_data(fake_user)
+            
+    #inserting data        
+    insert_data()
     
     # Testing Data Insertion 
     def test_insert_user(self):
